@@ -39,9 +39,34 @@ abstract class Organism
         return $this->age;
     }
 
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
+
+    public function setGender($gender)
+    {
+        return $this->gender = $gender;
+    }
+
+    public function setFullness($fullness)
+    {
+        return $this->fullness = $fullness;
+    }
+
+    public function setAge($age)
+    {
+        return $this->age = $age;
+    }
+
     public function isAlive()
     {
         return $this->alive;
+    }
+
+    public function setIsDie()
+    {
+        $this->alive = false;
     }
 
     public function getBio()

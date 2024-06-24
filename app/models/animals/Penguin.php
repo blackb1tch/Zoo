@@ -12,16 +12,16 @@ final class Penguin extends Bird
 
     public function move()
     {
-        $this->addBioEntry("{$this->name} ходит по вольеру.");
+        $this->addBioEntry("{$this->getName()} ходит по вольеру.");
     }
 
     public function eat()
     {
-        $this->addBioEntry("{$this->name} ест рыбу.");
+        $this->addBioEntry("{$this->getName()} ест рыбу.");
     }
 
     public function reproduce()
     {
-        $this->addBioEntry("{$this->name} откладывает яйца.");
+        $this->addBioEntry("{$this->getName()} откладывает яйца.");
     }
 }

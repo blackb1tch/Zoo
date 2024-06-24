@@ -13,16 +13,16 @@ final class Bear extends Mammal
 
     public function move()
     {
-        $this->addBioEntry("{$this->name} бродит по вольеру.");
+        $this->addBioEntry("{$this->getName()} бродит по вольеру.");
     }
 
     public function eat()
     {
-        $this->addBioEntry("{$this->name} ест мясо и ягоды.");
+        $this->addBioEntry("{$this->getName()} ест мясо и ягоды.");
     }
 
     public function reproduce()
     {
-        $this->addBioEntry("{$this->name} размножается.");
+        $this->addBioEntry("{$this->getName()} размножается.");
     }
 }

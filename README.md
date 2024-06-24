@@ -60,28 +60,28 @@ function animalTurn(array $enclosures) {
                 $animal->addBioEntry("Ход животного: {$animal->getName()}");
 
                 // Повышение возраста
-                $animal->age++;
+                $animal->setAge($animal->getAge()++);
                 $animal->addBioEntry("Возраст: {$animal->getAge()}");
 
                 // Смерть от старости
                 if ($animal->getAge() >= 30) {
-                    $animal->alive = false;
+                    $animal->setIsDie();
                     $animal->addBioEntry("{$animal->getName()} умер от старости.");
                 } else {
                     // Понижение сытости
-                    $animal->fullness -= rand(1, 10);
+                    $animal->setFullness($animal->getFullness()- rand(1, 10));
                     $animal->addBioEntry("Сытость: {$animal->getFullness()}");
 
                     // Смерть от голода
                     if ($animal->getFullness() <= 0) {
-                        $animal->alive = false;
+                        $animal->setIsDie();
                         $animal->addBioEntry("{$animal->getName()} умер от голода.");
                     } else {
                         // Питание
                         if ($enclosure->getFood() > 0) {
                             $animal->eat();
-                            $enclosure->food -= rand(1, 10);
-                            $animal->fullness += rand(5, 20);
+                            $enclosure->setFood($enclosure->getFood()- rand(1, 10));
+                            $animal->setFullness($animal->getFullness() + rand(5, 20));
                         } else {
                             $animal->addBioEntry("{$animal->getName()} не нашел еды.");
                         }

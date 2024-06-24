@@ -12,16 +12,16 @@ final class Crocodile extends Reptile
 
     public function move()
     {
-        $this->addBioEntry("{$this->name} ползет по вольеру.");
+        $this->addBioEntry("{$this->getName()} ползет по вольеру.");
     }
 
     public function eat()
     {
-        $this->addBioEntry("{$this->name} ест мясо.");
+        $this->addBioEntry("{$this->getName()} ест мясо.");
     }
 
     public function reproduce()
     {
-        $this->addBioEntry("{$this->name} откладывает яйца.");
+        $this->addBioEntry("{$this->getName()} откладывает яйца.");
     }
 }

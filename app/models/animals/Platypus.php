@@ -9,14 +9,14 @@ final class Platypus extends Mammal {
     }
 
     public function move() {
-        $this->addBioEntry("{$this->name} плавает по вольеру.");
+        $this->addBioEntry("{$this->getName()} плавает по вольеру.");
     }
 
     public function eat() {
-        $this->addBioEntry("{$this->name} ест насекомых.");
+        $this->addBioEntry("{$this->getName()} ест насекомых.");
     }
 
     public function reproduce() {
-        $this->addBioEntry("{$this->name} откладывает яйца.");
+        $this->addBioEntry("{$this->getName()} откладывает яйца.");
     }
 }

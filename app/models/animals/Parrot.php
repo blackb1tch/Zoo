@@ -9,14 +9,14 @@ final class Parrot extends Bird {
     }
 
     public function move() {
-        $this->addBioEntry("{$this->name} летает по вольеру.");
+        $this->addBioEntry("{$this->getName()} летает по вольеру.");
     }
 
     public function eat() {
-        $this->addBioEntry("{$this->name} ест фрукты.");
+        $this->addBioEntry("{$this->getName()} ест фрукты.");
     }
 
     public function reproduce() {
-        $this->addBioEntry("{$this->name} откладывает яйца.");
+        $this->addBioEntry("{$this->getName()} откладывает яйца.");
     }
 }

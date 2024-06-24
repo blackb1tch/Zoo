@@ -9,14 +9,14 @@ final class Tarantula extends Arachnid {
     }
 
     public function move() {
-        $this->addBioEntry("{$this->name} ползет по вольеру.");
+        $this->addBioEntry("{$this->getName()} ползет по вольеру.");
     }
 
     public function eat() {
-        $this->addBioEntry("{$this->name} ловит насекомых.");
+        $this->addBioEntry("{$this->getName()} ловит насекомых.");
     }
 
     public function reproduce() {
-        $this->addBioEntry("{$this->name} размножается.");
+        $this->addBioEntry("{$this->getName()} размножается.");
     }
 }

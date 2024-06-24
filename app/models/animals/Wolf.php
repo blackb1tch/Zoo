@@ -9,14 +9,14 @@ final class Wolf extends Mammal {
     }
 
     public function move() {
-        $this->addBioEntry("{$this->name} бегает по вольеру.");
+        $this->addBioEntry("{$this->getName()} бегает по вольеру.");
     }
 
     public function eat() {
-        $this->addBioEntry("{$this->name} ест мясо.");
+        $this->addBioEntry("{$this->getName()} ест мясо.");
     }
 
     public function reproduce() {
-        $this->addBioEntry("{$this->name} размножается.");
+        $this->addBioEntry("{$this->getName()} размножается.");
     }
 }

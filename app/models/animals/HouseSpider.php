@@ -9,14 +9,14 @@ final class HouseSpider extends Arachnid {
     }
 
     public function move() {
-        $this->addBioEntry("{$this->name} плетет паутину.");
+        $this->addBioEntry("{$this->getName()} плетет паутину.");
     }
 
     public function eat() {
-        $this->addBioEntry("{$this->name} ловит насекомых.");
+        $this->addBioEntry("{$this->getName()} ловит насекомых.");
     }
 
     public function reproduce() {
-        $this->addBioEntry("{$this->name} размножается.");
+        $this->addBioEntry("{$this->getName()} размножается.");
     }
 }

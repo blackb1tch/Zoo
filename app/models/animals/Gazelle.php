@@ -13,16 +13,16 @@ final class Gazelle extends Mammal
 
     public function move()
     {
-        $this->addBioEntry("{$this->name} бегает по вольеру.");
+        $this->addBioEntry("{$this->getName()} бегает по вольеру.");
     }
 
     public function eat()
     {
-        $this->addBioEntry("{$this->name} ест траву.");
+        $this->addBioEntry("{$this->getName()} ест траву.");
     }
 
     public function reproduce()
     {
-        $this->addBioEntry("{$this->name} размножается.");
+        $this->addBioEntry("{$this->getName()} размножается.");
     }
 }
